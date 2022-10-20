@@ -1,57 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/Baner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cwiczenie_1"
-        android:background="@color/teal_200"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        />
-    <EditText
-        android:id="@+id/Login"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Baner"
-        android:textSize="25sp"
-        android:layout_marginTop="30dp"
-        android:hint="Wpisz swoj login"
-        android:textAlignment="center"
-        android:layout_centerInParent="true"
-        android:inputType="textPassword"
-        >
-    </EditText>
-    <EditText
-        android:id="@+id/Haslo"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Login"
-        android:textSize="25sp"
-        android:hint="Wpisz swoje haslo"
-        android:textAlignment="center"
-        android:layout_marginTop="30dp"
-        android:layout_centerInParent="true"
-        android:inputType="textPassword"
-        >
-    </EditText>
+        android:background="@android:color/background_dark"
+        android:text="Cwiczenie_2"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textAlignment="center">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/zapisz"
-        android:layout_below="@id/Haslo"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:minWidth="150dp"
-        android:text="Zaloguj"
-        >
+    </TextView>
 
-    </Button>
-</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rodzaje przyciskow"
+        android:textSize="30dp"
+        android:textAlignment="center">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="40dp"
+        android:background="@android:color/background_dark"
+    >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:textSize="20dp"
+            android:gravity="start"
+            android:text="Zwykly przycisk">
+
+        </TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zwykly"
+
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przelacznik"
+            android:textSize="20dp">
+
+        </TextView>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+
+        </ToggleButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przycisk Opcji"
+            android:textSize="20dp">
+
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcja_1"
+            >
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcja_2"
+                >
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opcja_3"
+                >
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
